@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Taylor County Membership Directory</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="365 Degree Total Marketing" />
+    <base href="https://365dtm.com/membership/taylor/">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Metter Membership Directory">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <div style="display: none;">
+        [[*content]]
+    </div>
+    <div>
+        <div id="piece-search">
+            <input class="search" placeholder="Type a Keyword" /> or
+
+             <select name="material" id="filter-material" class="businessdirectorydropdown">
+                <option selected="selected" value=""> --Select a Category --</option>
+                <option value="Assisted Living">Assisted Living</option>
+                <option value="Attorney at Law">Attorney at Law</option>
+                <option value="Auto Shop">Auto Shop</option>
+                <option value="Auto/Body Shop">Auto/Body Shop</option>
+                <option value="Banking">Banking</option>
+                <option value="Civic/Club Organization">Civic/Club Organization</option>
+                <option value="College">College</option>
+                <option value="Concrete Company">Concrete Company</option>
+                <option value="Event/Festival">Event/Festival</option>
+                <option value="Financial Management">Financial Management</option>
+                <option value="Friends of the Chamber">Friends of the Chamber</option>
+                <option value="Gas Station">Gas Station</option>
+                <option value="Gas Station/Resturant">Gas Station/Resturant</option>
+                <option value="Government">Government</option>
+                <option value="Hair Salon">Hair Salon</option>
+                <option value="Insurance">Insurance</option>
+                <option value="Medical Services">Medical Services</option>
+                <option value="Pharmacy">Pharmacy</option>
+                <option value="Propane Company">Propane Company</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Resturant">Resturant</option>
+                <option value="Retail">Retail</option>
+                <option value="School System">School System</option>
+                <option value="Tourism/Things To Do">Tourism/Things To Do</option>
+                <option value="Towing Company">Towing Company</option>
+                <option value="Utility">Utility</option>
+                <option value="No Category">No Category</option>
+
+
+
+
+            </select>
+            <br>            
+            <button class="sort" data-sort="material">
+                Sort By Category
+            </button>
+            <button class="sort" data-sort="name">
+                Sort By Business Name
+            </button>
+
+            
+
+            <ul class="list">
+                [[getImageList? &tvname=`myMIGXtv` &tpl=`listallmembers` &limit=`500` &docid=`1`]]
+           </ul>
+
+
+
+        </div>
+    </div>
+    <script type="application/javascript" src="assets/js/list.min.js" charset="utf-8"></script>
+    <script type="application/javascript" src="assets/js/main.js" charset="utf-8"></script>
+</body>
+
+</html>
